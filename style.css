@@ -1,0 +1,249 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url("background.jpg");
+ /* http://themes.iki-bir.com/brailie/style/images/art/slider-bg31.jpg  */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: 0 auto;
+    background-attachment: fixed;
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: fixed;
+    transition: 0.3s;
+    background: #181818;
+}
+#navbar {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    width: 30vw;
+}
+#logo {
+    display: flex;
+    justify-content: start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    color: white;
+    width: 45vw;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+    padding: 0 30px 0 30px;
+    transition: .3s;
+}
+.nav-link:hover {
+    color: #9eb9d7;
+}
+#welcome-section {
+    width: 100%;
+    height: 100%;
+    /* padding-top: 10%; */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#title {
+    /* margin: 10px; */
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+}
+#title h1 {
+    margin: 10px;
+}
+#desc {
+    color: white;
+    font-weight: 400;
+}
+#desc h2 {
+    margin: 0;
+}
+#avatar img{
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+}
+.content-section {
+    background: #181818;
+}
+#about-me-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vw;
+}
+#about-me-text p, #projects p, #contact p{
+    color: #9eb9d7;
+    width: 100%;
+    padding-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#about-me-text h3, #projects h3, #contact h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+.center {
+    width: 80%;
+    margin: 0 auto;
+}
+#more-info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+#more-info h3{
+    padding-left: 15px;
+    text-align: center;
+    font-size: 1.5em;   
+}
+#my-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 5% 5% 5%;
+}
+.icon {
+    color: #9eb9d7;
+    width: 100px;
+    height: auto;
+    padding-bottom: 25px;
+    align-self: center;
+    text-align: center;
+}
+.desc {
+    display: flex;
+    flex-flow: column;
+    height: auto;
+}
+.flex p{
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 10px 20px 0px 20px;
+    /* height: 100px; */
+    margin: 0;
+}
+.text-between {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5% 5%;
+    color: white;
+}
+.project-showcase-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    height: auto;
+    perspective: 800px;
+}
+.project-cards {
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    transition: 0.5s;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.card {
+    border-top: solid 2px #9eb9d7;
+    width: 100%;
+    border-bottom: solid 2px #9eb9d7;
+    text-decoration: none;
+    backface-visibility: hidden;
+    position: inherit;
+}
+.project-pic {
+    width: 90%;
+    height: auto;
+
+}
+.project-text {
+    color: #9eb9d7;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px;
+    border-bottom: #9eb9d7 solid 2px;
+}
+.card-flip {
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    background-color: #181818;
+    position: relative;
+    top: -50%;
+}
+.card-flip p {
+    text-align: center;
+
+}
+.project-cards:hover {
+    transform: rotateY(-180deg);
+}
+#contact-icons {
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer {
+    background: black;
+    margin: 0;
+    color: white;
+    padding: 50px 0 20px 0; 
+    text-align: center;
+    font-size: 1.25em;
+}
+footer a {
+    color: white;
+    text-decoration: none; 
+}
+footer a:hover {
+    color: #9eb9d7;
+}
+@media screen and (max-width: 700px)
+{
+    nav {
+        flex-direction: column;
+    }
+    #logo {
+        width: 100%;
+        justify-content: center;
+    }
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-link {
+        padding: 10px 10px;
+    }
+    #avatar {
+        display: none;
+    }
+    #my-info {
+        flex-direction: column;
+    }
+    #contact-icons {
+        flex-direction: column;
+    }
+}
